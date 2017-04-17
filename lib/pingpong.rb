@@ -1,0 +1,24 @@
+class Fixnum
+  define_method(:pingpong) do
+
+    array = []
+    number = self
+    if number.<(0)
+      number = number.abs()
+    end
+    index = 1
+    number.times() do
+      if index.%(15).==(0)
+        array.push("ping-pong")
+      elsif index.%(5).==(0)
+        array.push("pong")
+      elsif index.%(3).==(0)
+        array.push("ping")
+      else
+        array.push(index)
+     end
+      index = index.+(1)
+    end
+    array
+  end
+end
