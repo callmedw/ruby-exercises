@@ -1,15 +1,10 @@
-#
+#Ruby Ping-Pong
 
 ## Overview
-
-
-
-
 
 ## Specifications
 
 | Behavior | Input | Output |
-|----------|:-----:|:------:|
 | Program returns an error message if input is not a number. | Input: "b" | Output: "NoMethodError" |
 | Program counts from 1 to a given number. | Input: 2 | Output: [1, 2] |
 | Program converts negative numbers to their absolute values | Input: -2 | Output: [1, 2] |
@@ -20,17 +15,10 @@
 
 ## Known Bugs
 
-__
-
 ## Support and contact details
-
-
 
 ## Technologies Used
 
 * _Ruby_
 
-
 ### License
-
-*MIT & GPL*
