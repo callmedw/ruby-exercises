@@ -4,12 +4,16 @@ class Fixnum
   define_method(:pingpong) do
     array = []
     number = self
-    if self.<(0)
-      number.abs()
+    if number.<(0)
+      number = number.abs()
     end
     index = 1
-    self.times() do
-      array.push(index)
+    number.times() do
+      if index.%(3).==(0)
+        array.push("ping")
+      else
+        array.push(index)
+      end
       index = index.+(1)
     end
     array
